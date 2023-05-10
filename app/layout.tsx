@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <body className={inter.className}>
           <div className='m flex flex-col gap-6 p-6'>
             <Header />
-            <div className='h-screen w-full rounded-xl bg-white shadow'>{children}</div>
+            <div className='min-h-screen w-full rounded-xl bg-white shadow'>{children}</div>
+            <Footer />
           </div>
         </body>
       </html>
