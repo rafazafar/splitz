@@ -5,7 +5,9 @@ export default function Footer() {
     <footer className='w-full rounded-xl bg-white py-8 text-gray-400 '>
       <div className='mx-auto max-w-screen-xl px-4'>
         <ul className='mx-auto flex max-w-screen-md flex-wrap justify-center text-lg font-light'>
-          <Link href='/terms'>Terms</Link>
+          <Link className='text-sm' href='/terms'>
+            Terms & Conditions
+          </Link>
         </ul>
         <div className='mx-auto flex max-w-xs items-center justify-between pt-8'>
           <a href='#' className=' transition-colors duration-200 hover:text-gray-800 '>
